@@ -1,5 +1,5 @@
-## 🚀 React-Node-Integracao-Api-Omdb
-Exemplo de Integração Api OMDB em React e Node.js com banco de dados SQL-Server.
+## 🚀 React-Node-Integracao-Api-Omdb-Jwt
+Exemplo de Integração Api OMDB com Autorização JWT em React e Node.js com banco de dados SQL-Server.
 
 #### 📋 O que voçê vai ver nesse Projeto
 
