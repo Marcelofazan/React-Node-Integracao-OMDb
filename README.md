@@ -11,7 +11,7 @@ Exemplo de Integração Api OMDB com Autorização JWT em React e Node.js com ba
 | JWT | É um crachá digital usado para identificar usuários e trocar informações de forma segura entre computadores |
 
 #### 📁 Requisitos do Projeto
-Necessário Habilitar TCP/IP no SQLServer Configuration Manager 
+Necessário Habilitar TCP/IP 1433 no SQLServer Configuration Manager 
 
 - Passo 1: Forçar a porta 1433 no TCP/IPNo lado direito, clique com o botão direito em TCP/IP e escolha Properties (Propriedades). Na aba Protocol, mude a opção Enabled para Yes (caso esteja No).
 - Agora, mude para a aba IP Addresses (Endereços IP). Role a janela até o final, lá embaixo na seção **IPAll**. Limpe completamente o campo **TCP Dynamic Ports** (deixe em branco, apague o 0 se tiver).
