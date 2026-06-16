@@ -62,26 +62,31 @@ VSCode Terminal [2]
 npm run dev
 http://localhost:5173/
 
-#### 🧪 Executar Jest e Postman 
+#### 🧪 Executar Jest 
 VSCode Terminal [3]
 ```bash
 npx jest
 ```
 
-- Postman
-http://localhost:3000/api/auth/register
+#### Executar Postman ( somente exemplo )
+**1 -Registrar**
+- Enviar POST / Paciente: **http://localhost:3000/api/auth/register**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json 
+  ```json
 {
     "username" : "marcelo2@gmail.com",
     "email" : "marcelo2@gmail.com",
     "password" : "123123"
 }
+  ```
 
-
-http://localhost:3000/api/auth/login
+**2 -Login**
+- Enviar POST / Paciente: **http://localhost:3000/api/auth/login**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json 
+  ```json
 {
     "email" : "marcelo2@gmail.com",
     "password" : "123123"
 }
+  ```
 
 
 
