@@ -7,7 +7,7 @@ async function setupDatabase() {
     try {
         const masterConfig = {
             server: process.env.DB_HOST,
-            port: parseInt(process.env.DB_PORT || '50720'),
+            port: parseInt(process.env.DB_PORT || '1433'),
             database: 'master',
             user: process.env.DB_USER,
             password: process.env.DB_PASSWORD,
@@ -32,7 +32,7 @@ async function setupDatabase() {
 
         const appConfig = {
             server: process.env.DB_HOST,
-            port: parseInt(process.env.DB_PORT || '50720'),
+            port: parseInt(process.env.DB_PORT || '1433'),
             database: dbName,
             user: process.env.DB_USER,
             password: process.env.DB_PASSWORD,
