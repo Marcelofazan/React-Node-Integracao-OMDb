@@ -11,20 +11,28 @@ Exemplo de integração com Api OMDb em React e Node.js com autenticação Jwt e
 | JWT | É um crachá digital usado para identificar usuários e trocar informações de forma segura entre computadores |
 
 #### 📁 Requisitos do Projeto
-Necessário Habilitar **TCP/IP 1433** no SQLServer Configuration Manager 
 
-- Passo 1: Forçar a porta 1433 no TCP/IPNo lado direito, clique com o botão direito em TCP/IP e escolha Properties (Propriedades). Na aba Protocol, mude a opção Enabled para Yes (caso esteja No).
+##### ⚙️ Necessário Habilitar SQLSERVER IP Estático  
+
+O SQLSERVER funcionária na porta **TCP/IP 1435** para não gerar conflitos com a porta padrão **1433**
+
+- Abra o **SQLServer Configuration Manager** 
+- Passo 1 : No lado direito, Clique em Configuração de rede -> Protocolos para SQLEXPRESS e selecione a opção TCP/IP
+
+- Em (Propriedades). Na aba Protocolo, mude a opção Enabled para Yes (caso esteja No).
 - Agora, mude para a aba IP Addresses (Endereços IP). Role a janela até o final, lá embaixo na seção **IPAll**. Limpe completamente o campo **TCP Dynamic Ports** (deixe em branco, apague o 0 se tiver).
-- No campo TCP Port, digite 1433. Clique em Aplicar e depois em OK.
+- No campo TCP Port, digite **1435**. Clique em Aplicar e depois em OK.
+- **Limpe completamente o campoPortas TCP Dinamicas**
 
-- Passo 2: Reiniciar o serviço do Banco de DadosO SQL Server só vai ler essa nova porta se for reiniciado:
-No menu esquerdo do mesmo programa, suba e clique em SQL Server Services.No lado direito, clique com o botão direito em SQL Server (SQLEXPRESS) e escolha Restart (Reiniciar).
-
-- Para saber qual porta que o MSSQL esta rodando
+- Passo 2: Reiniciar o serviço do Banco de DadosO SQL Server só vai ler essa nova porta se for reiniciado
+- Passo 3: Confira sempre que necessário a porta no **SSMS (SQL Server Management Studio)**
+- 
 ```bash
-$RegPath = "HKLM:\SOFTWARE\Microsoft\Microsoft SQL Server\*\MSSQLServer\SuperSocketNetLib\Tcp\IPAll"
-$Porta = Get-ItemProperty -Path (Get-Item $RegPath).PSPath | Select-Object -ExpandProperty TcpPort
-Write-Host "A porta TCP configurada é: $Porta"
+SELECT 
+    listener_id, 
+    ip_address, 
+    port 
+FROM sys.dm_tcp_listener_states;
 ```
 
 Criar usuario no site API omdb e copiar o **Chave Key** para poder fazer consultas da API
