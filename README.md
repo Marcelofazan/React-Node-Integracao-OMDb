@@ -19,15 +19,11 @@ O SQLSERVER funcionária na porta **TCP/IP 1435** para não gerar conflitos com 
 ##### 
 
 **Passo 1:** Abra o **SQLServer Configuration Manager** 
-No lado direito, Clique em Configuração de rede -> Protocolos para SQLEXPRESS e selecione a opção TCP/IP
-
-Em (Propriedades). Na aba Protocolo, mude a opção Enabled para Yes (caso esteja No).
-
-Agora, mude para a aba IP Addresses (Endereços IP). Role a janela até o final, lá embaixo na seção **IPAll**. Limpe completamente o campo **TCP Dynamic Ports** (deixe em branco, apague o 0 se tiver).
-
-No campo TCP Port, digite **1435**. Clique em Aplicar e depois em OK. 
-
-Por ultimo o principal **Limpe completamente o campo Portas TCP Dinamicas**
+- No lado direito, Clique em Configuração de rede -> Protocolos para SQLEXPRESS e selecione a opção TCP/IP
+- Em (Propriedades). Na aba Protocolo, mude a opção Enabled para Yes (caso esteja No).
+- Agora, mude para a aba IP Addresses (Endereços IP). Role a janela até o final, lá embaixo na seção **IPAll**. Limpe completamente o campo **TCP Dynamic Ports** (deixe em branco, apague o 0 se tiver).
+- No campo TCP Port, digite **1435**. Clique em Aplicar e depois em OK. 
+- Por ultimo o principal **Limpe completamente o campo Portas TCP Dinamicas**
 
 **Passo 2:** Reiniciar o serviço do Banco de Dados do SQL Server, somente vai ler essa nova porta se for reiniciado.
 
