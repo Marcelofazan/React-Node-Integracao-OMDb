@@ -11,13 +11,13 @@ async function setupDatabase() {
             database: 'master',
             user: process.env.DB_USER,
             password: process.env.DB_PASSWORD,
-            options: { trustServerCertificate: true }
+            options: {  trustServerCertificate : true }
         };
 
         console.log('Connecting to SQL Server...');
         const masterPool = await sql.connect(masterConfig);
 
-        const dbName = process.env.APP_DATABASE || 'FilmTodosDB';
+        const dbName = process.env.APP_DATABASE || 'FilmesDB';
         const result = await masterPool.request().query(`SELECT name FROM sys.databases WHERE name = '${dbName}'`);
 
         if (result.recordset.length === 0) {
