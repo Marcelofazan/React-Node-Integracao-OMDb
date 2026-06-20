@@ -12,7 +12,7 @@ Exemplo de integração com Api OMDb em React e Node.js com autenticação Jwt e
 
 #### 📁 Requisitos do Projeto
 
-##### ⚙️ Necessário Habilitar SQLSERVER IP Estático  
+##### ⚙️ Necessário Configurar SQL-Server IP Estático  
 
 O SQLSERVER funcionária na porta **TCP/IP 1435** para não gerar conflitos com a porta padrão **1433**
 
@@ -25,7 +25,9 @@ Em (Propriedades). Na aba Protocolo, mude a opção Enabled para Yes (caso estej
 
 Agora, mude para a aba IP Addresses (Endereços IP). Role a janela até o final, lá embaixo na seção **IPAll**. Limpe completamente o campo **TCP Dynamic Ports** (deixe em branco, apague o 0 se tiver).
 
-No campo TCP Port, digite **1435**. Clique em Aplicar e depois em OK. **Limpe completamente o campoPortas TCP Dinamicas**
+No campo TCP Port, digite **1435**. Clique em Aplicar e depois em OK. 
+
+Po ultimo o principal **Limpe completamente o campo Portas TCP Dinamicas**
 
 ##### Passo 2: 
 Reiniciar o serviço do Banco de DadosO SQL Server só vai ler essa nova porta se for reiniciado
