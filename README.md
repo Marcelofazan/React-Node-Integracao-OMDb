@@ -26,7 +26,7 @@ O SQLSERVER funcionária na porta **TCP/IP 1435** para não gerar conflitos com 
 
 ##### Passo 2: Reiniciar o serviço do Banco de DadosO SQL Server só vai ler essa nova porta se for reiniciado
 ##### Passo 3: Confira sempre que necessário a porta no **SSMS (SQL Server Management Studio)**
-- 
+
 ```bash
 SELECT 
     listener_id, 
