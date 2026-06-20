@@ -37,7 +37,7 @@ SELECT
 FROM sys.dm_tcp_listener_states;
 ```
 
-Criar usuario no site API omdb e copiar o **Chave Key** para poder fazer consultas da API
+Criar usuario no site API OMDb e copiar o **Chave Key** para poder fazer consultas da API
 [https://www.omdbapi.com/](https://www.omdbapi.com/)
 
 
