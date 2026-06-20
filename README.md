@@ -9,9 +9,9 @@ Exemplo de integração com Api OMDb em React e Node.js com autenticação Jwt e
 | LocalStorage | Armazenamento em cache de dados no navegador de forma persistente em pares de chave e valor |
 | Jest | Ferramenta framework de testes |
 | JWT | É um crachá digital usado para identificar usuários e trocar informações de forma segura entre computadores |
+| Swagger |	Conjunto de ferramentas para modelagem, documentação e teste de APIs RESTful |
 
 #### 💬 Requisitos do Projeto
-
 Criar usuario no site API OMDb e copiar o **Chave Key** para poder fazer consultas da API
 - [OMDb API](https://www.omdbapi.com/)
 
