@@ -12,8 +12,8 @@ Exemplo de integração com Api OMDb em React e Node.js com autenticação Jwt e
 | Swagger |	Conjunto de ferramentas para modelagem, documentação e teste de APIs RESTful |
 
 #### 💬 Requisitos do Projeto
-Criar usuario no site API OMDb e copiar o **Chave Key** para poder fazer consultas da API
-- [OMDb API](https://www.omdbapi.com/)
+- Criar usuario no site API OMDb e copiar o **Chave Key** para poder fazer consultas da API [OMDb API](https://www.omdbapi.com/)
+- Editar Arquivo .env
 
 #### 🔄 Executar a aplicação
 
