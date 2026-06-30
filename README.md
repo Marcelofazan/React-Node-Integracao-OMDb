@@ -47,7 +47,7 @@ npm run dev
 
 O Projeto é Frontend é executado em **http://localhost:5173/**
 
-#### 🧪 Executar Testes Unitários
+#### 🔍 Executar Testes Unitários
 
 VSCode Terminal [3]
 ```bash
